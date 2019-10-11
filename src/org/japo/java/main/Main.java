@@ -23,20 +23,20 @@ import java.util.Random;
  */
 public class Main {
 
+    // Instanciar Random
+    public static final Random RND = new Random();
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Instanciar Random
-        Random rnd = new Random();
-
         // Variable
         boolean balance;
 
         // Generar dato
-        balance = rnd.nextBoolean();
+        balance = RND.nextBoolean();
 
         // Mensaje
-        System.out.printf("Aptitud satisfactoria .....: %b\n", balance);
+        System.out.printf("Aptitud satisfactoria .....: %b%n", balance);
     }
 }
